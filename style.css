@@ -1,7 +1,33 @@
+/* Tablet */
+@media (max-width: 768px) {
+  .home h2 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .home h2 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  .c-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .navbar-nav a {
+    font-size: 1rem;
+  }
+}
+
 /* appling google font over the website  */
 body{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 /* styling menu icon */
 .nav-menu{
@@ -158,6 +184,7 @@ body{
     height: 130px;
     width: 130px;
     border-radius: 50%;
+    background: #ededed; /* Fallback background color */
     background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
     display: flex;
     align-items: center;
@@ -175,25 +202,25 @@ body{
     position: relative;
     font-size: 1.5rem;
     font-weight: 600;
+    color: #7d2ae8;
 }
-.circular-progress .html-progress{
+.html-progress{
     color: #fca61f;
 }
-.circular-progress .javascript-progress{
+.javascript-progress{
     color: #6f34fe;
 }
-.circular-progress .php-progress{
+.php-progress{
     color: #20c997;
 }
-
-.circular-progress .reactjs-progress{
+.reactjs-progress{
     color: #3f396d;
 }
-.circular-progress .python-progress{
-    color: #306998;
+.python-progress{
+    color: #f33a7e;
 }
-.circular-progress .prompt-engineering-progress{
-    color: #ff6347;
+.prompt-engineering-progress{
+    color: #56cb17;
 }
 .text{
     font-size: 1.2rem;
@@ -232,33 +259,7 @@ body{
     border: none;
 }
 
-/* testimonial section starts */
-.testimonial img:hover{
-    transform: scale(1.2,1.2);
-    transition-duration: 1s;
-}
-.testimonial h4{
-    color: #3f396d;
-}
-.testimonial i{
-    font-size: 2.9rem;
-    color: #fca61f;
-    
-}
-.testimonial .nextprev-btn{
-    border: none;
-    background-color: #fff;
-}
-.prev:hover,.prev-btn:hover{
-    color:#6f34fe;
-    transform: translateX(-10px);
-    transition-duration: 1s;
-}
-.next:hover,.next-btn:hover{
-    color:#6f34fe;
-    transform: translateX(10px);
-    transition-duration: 1s;
-}
+
 
 /* blog section starts */
 .blog{
@@ -374,9 +375,15 @@ footer .link-group a:hover{
     background-color: #25D366;
 }
 .social-links .behance{
-    color: #255afc;
+    color: #111111;
 }
 .social-links .behance:hover{
+    background-color: #0f0f0f;
+}
+.social-links .facebook{
+    color: #255afc;
+}
+.social-links .facebook:hover{
     background-color: #255afc;
 }
 
